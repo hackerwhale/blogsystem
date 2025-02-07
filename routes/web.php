@@ -34,6 +34,8 @@ Route::prefix('admin')->name('admin.')->group(function () {
             Route::get('/login', 'loginform')->name('login');
             Route::get('/forgot-password', 'forgotform')->name('forgot');
             Route::post('/login-handler', 'loginHandler')->name('login_handler');
+            Route::post('/send-password-reset-link','sendPasswordResetLink')->name('send_password_reset_link');
+            Route::get('/password/reset/{token}','resetForm')->name('reset_password_form');
         });
     });
 

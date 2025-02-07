@@ -1,4 +1,4 @@
-@extends('backend.layout.auth-layout');
+@extends('backend.layout.auth-layout')
 @section('pageTItle',isset($pageTItle) ? $pageTItle : 'Page Title Here')
 @section('content')
 
@@ -39,7 +39,7 @@
             </div>
             <div class="col-6">
                 <div class="forgot-password">
-                    <a href="forgot-password.html">Forgot Password</a>
+                    <a href="{{ route('admin.forgot' )}}">Forgot Password</a>
                 </div>
             </div>
         </div>

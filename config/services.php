@@ -34,5 +34,14 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
+    'mail' => [
+        'host' =>env('CMAIL_HOST'),
+        'username' =>env('CMAIL_USERNAME'),
+        'password' =>env('CMAIL_PASSWORD'),
+        'encryption' =>env('CMAIL_ENCRYPTION'),
+        'port' =>env('CMAIL_PORT'),
+        'from_address' =>env('CMAIL_FROM_ADDRESS'),
+        'from_name' =>env('CMAIL_NAME')
+    ],
 
 ];
