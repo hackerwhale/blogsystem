@@ -56,6 +56,9 @@
         <p>Hello, {{ $user->name}}</p>
         <p>We received a request to reset your password. Click the button below to proceed.</p>
         <a href="{{ $actionlink }}" target="_blank" class="btn">Reset Password</a>
+        <p>
+            This link is valid for 15 minutes.
+        </p>
         <p>If you did not request this, please ignore this email.</p>
         <p class="footer">© {{ date('Y')}} Blog System. All Rights Reserved.</p>
     </div>
