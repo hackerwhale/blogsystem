@@ -1,5 +1,5 @@
-@extends('backend.layout.pages-layout');
-@section('pageTItle',isset($pageTItle) ? $pageTItle : 'Page Title Here')
+@extends('backend.layout.auth-layout');
+@section('pageTitle',isset($pageTitle) ? $pageTitle : 'Page Title Here')
 @section('content')
 
 Page content here.....

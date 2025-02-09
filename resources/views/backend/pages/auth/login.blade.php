@@ -1,12 +1,12 @@
-@extends('backend.layout.auth-layout')
-@section('pageTItle',isset($pageTItle) ? $pageTItle : 'Page Title Here')
+@extends('backend.layout.auth-layout');
+@section('pageTitle',isset($pageTitle) ? $pageTitle : 'Page Title Here')
 @section('content')
 
 <div class="login-box bg-white box-shadow border-radius-10">
     <div class="login-title">
         <h2 class="text-center text-primary">Login To DeskApp</h2>
     </div>
-    <form action={{ route('admin.login_handler') }} method="post">
+    <form action={{ route('admin.login_handler') }} method="POST">
         <x-form-alerts></x-form-alerts>
         @csrf
 
